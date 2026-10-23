@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Chango&family=DynaPuff:wght@400..700&family=Jacquard+12&family=Odibee+Sans&family=Pacifico&family=Rye&display=swap');
 
 body{
-    background-color: #141414;
+    background-color: #141414; 
 }
 
 .grid{
@@ -9,6 +9,8 @@ body{
 }
 
 #title{
+    font-size: 100px;
+    -webkit-text-stroke: 1px #a58cf4;
     font-family: 'Jacquard 12';
     color: #433075;
 }
