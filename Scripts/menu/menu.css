@@ -6,6 +6,7 @@ body{
 
 .grid{
     display: grid;
+    display: 100vh;
 }
 
 #title{
@@ -13,4 +14,9 @@ body{
     -webkit-text-stroke: 1px #a58cf4;
     font-family: 'Jacquard 12';
     color: #433075;
+}
+
+header{
+    display: flex;
+    justify-content: center;
 }
