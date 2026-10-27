@@ -22,7 +22,6 @@ header{
     grid-area: "header";
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     align-items: center;
 }
 
@@ -31,19 +30,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     flex-direction: column;
 }
 
 a{
     margin-top: 10px;
-    border: 1px solid red;
     height: auto;
     width: 25%;
 }
 
 .title{
-    border: 1px solid red;
     height: auto;
-    width: 100%;
+    width: 50%;
 }
