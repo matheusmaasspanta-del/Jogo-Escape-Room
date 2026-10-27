@@ -11,14 +11,12 @@ body{
     display: 100vh;
 }
 
-#title{
-    font-size: 100px;
-    -webkit-text-stroke: 1px #a58cf4;
-    font-family: 'Jacquard 12';
-    color: #433075;
+header{
+    display: flex;
+    justify-content: center;
 }
 
-header{
+main{
     display: flex;
     justify-content: center;
 }
