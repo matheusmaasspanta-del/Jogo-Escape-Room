@@ -7,3 +7,24 @@ body{
     align-items: center;
     background-color: black;
 }
+
+.missoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cena{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.porta{
+    position: absolute;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+}
