@@ -10,24 +10,36 @@ body{
     min-height: 100vh;
 }
 
-main{
-    width: 1920px;
-    height: 1080px;
+#tela{
+    position: relative;
+
+    width: 320px;
+    height: 180px;
 }
 
-.cena{
-    position: relative;
-    width: 100vw;
-    height: auto;
+#tela div{
+    height: 100%;
+    width: 100%;
+    
 }
+
+#cena1_missao1{
+    background-image: url(../../Sprites/Background1.png);
+    background-size: contain;
+    transform: scale(1.5);
+}
+
 
 .porta{
     position: absolute;
-    height: auto;
+    height: 100%;
     width: 100%;
+    max-width: 510px;
+    max-height: 720px;
+    z-index: 2;
 }
 
 .background{
-    height: 100%;
-    width: 100%;
+
+    z-index: 1;
 }
