@@ -23,10 +23,23 @@ body{
     
 }
 
+@media (orientation: portrait) {
+    #cena1_missao1{
+        background-image: url(../../Sprites/Background1.png);
+        background-size:contain;
+        transform: scale(1.2);
+    }
+}
+
+.cena{
+    display: none;
+}
+
 #cena1_missao1{
+    display: block;
     background-image: url(../../Sprites/Background1.png);
     background-size:contain;
-    transform: scale(1.2);
+    transform: scale(5.5);
 }
 
 
