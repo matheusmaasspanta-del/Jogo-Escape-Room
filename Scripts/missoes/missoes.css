@@ -16,21 +16,17 @@ body{
     position: relative;
     width: 320px;
     height: 180px;
+    transform: scale(5.2);
 }
 
-.missoes, .cena{
+.cena{
     height: 100%;
     width: 100%;
     
 }
 
-.missoes{
-    display: none;
-}
-
 #missao1{
     display: block;
-    transform: scale(5.2);
 }
 
 .cena{
@@ -71,10 +67,41 @@ body{
     z-index: 2;
 }
 
+.seta{
+    position:absolute;
+
+    height: 32px;
+    width: 32px;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 5;
+}
+
+#seta_esquerda{
+    background-image: url(../../Sprites/Cena_esquerda.png);
+    left: 10px;
+    top: 50%;
+
+    transform: translate(0%,-50%);
+}
+
+#seta_direita{
+    background-image: url(../../Sprites/Cena_direita.png);
+    right: 10px;
+    top:50%;
+
+    transform: translate(0%,-50%);
+}
+
 @media (orientation: portrait) {
+    #tela{
+        transform: scale(1);
+    }
     #missao1{
         display: block;
-        transform: scale(1.2);
+        transform: scale(1);
     }
     #cena1_missao1{
         background-image: url(../../Sprites/Background1.png);
@@ -84,14 +111,5 @@ body{
         transform: scale(1);
 
         z-index: 1;
-    }
-    .porta{
-        position: absolute;
-
-        background-image: url(../../Sprites/Porta_fechada.png);
-        background-size:100% 100%;
-        background-repeat: no-repeat;
-
-        z-index: 2;
     }
 }
