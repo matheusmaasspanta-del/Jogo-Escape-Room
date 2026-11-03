@@ -26,7 +26,7 @@ body{
 #cena1_missao1{
     background-image: url(../../Sprites/Background1.png);
     background-size: contain;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 
 
