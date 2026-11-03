@@ -23,13 +23,7 @@ body{
     
 }
 
-@media (orientation: portrait) {
-    #cena1_missao1{
-        background-image: url(../../Sprites/Background1.png);
-        background-size:contain;
-        transform: scale(1.2);
-    }
-}
+
 
 .cena{
     display: none;
@@ -39,9 +33,16 @@ body{
     display: block;
     background-image: url(../../Sprites/Background1.png);
     background-size:contain;
-    transform: scale(5.5);
+    transform: scale(5.2);
 }
 
+@media (orientation: portrait) {
+    #cena1_missao1{
+        background-image: url(../../Sprites/Background1.png);
+        background-size:contain;
+        transform: scale(1.2);
+    }
+}
 
 .porta{
     position: absolute;
