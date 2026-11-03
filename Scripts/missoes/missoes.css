@@ -23,6 +23,8 @@ main{
 
 .porta{
     position: absolute;
+    height: auto;
+    width: 100%;
 }
 
 .background{
