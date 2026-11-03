@@ -6,12 +6,13 @@ body{
     justify-content: center;
     align-items: center;
     background-color: black;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
-.missoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main{
+    width: 1920px;
+    height: 1080px;
 }
 
 .cena{
