@@ -36,24 +36,22 @@ body{
     transform: scale(5.2);
 }
 
+
+.porta{
+    position: absolute;
+    z-index: 2;
+    transform: scale(5.2);
+}
+
 @media (orientation: portrait) {
     #cena1_missao1{
         background-image: url(../../Sprites/Background1.png);
         background-size:contain;
         transform: scale(1.2);
     }
-}
-
-.porta{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    max-width: 510px;
-    max-height: 720px;
-    z-index: 2;
-}
-
-.background{
-
-    z-index: 1;
+    .porta{
+        position: absolute;
+        z-index: 2;
+        transform: scale(1.2);
+    }
 }
