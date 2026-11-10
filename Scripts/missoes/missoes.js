@@ -29,11 +29,11 @@ function cenaDireita(){
             cena1.style.display = 'none';
             cena2.style.display = 'block';
         }else if(cena2.style.display == 'block'){
-            cena2.style.display == 'none';
-            cena3.style.display == 'block';
+            cena2.style.display = 'none';
+            cena3.style.display = 'block';
         }else{
-            cena3.style.display == 'none';
-            cena1.style.display == 'block';
+            cena3.style.display = 'none';
+            cena1.style.display = 'block';
         }
     }else if(missao2.style.display == 'block'){
         cena1 = document.getElementById('cena1_missao2');
@@ -60,11 +60,11 @@ function cenaEsquerda(){
             cena1.style.display = 'none';
             cena3.style.display = 'block';
         }else if(cena2.style.display == 'block'){
-            cena3.style.display == 'none';
-            cena2.style.display == 'block';
+            cena3.style.display = 'none';
+            cena2.style.display = 'block';
         }else{
-            cena2.style.display == 'none';
-            cena1.style.display == 'block';
+            cena2.style.display = 'none';
+            cena1.style.display = 'block';
         }
     }else if(missao2.style.display == 'block'){
         cena1 = document.getElementById('cena1_missao2');
