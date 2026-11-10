@@ -11,9 +11,9 @@ function abrirPortaMissao1(){
     }
 }
 
-let missao1 = document.getElementById("missao1");
-let missao2 = document.getElementById("missao2");
-let missao3 = document.getElementById("missao3");
+let missao1 = document.getElementById('missao1');
+let missao2 = document.getElementById('missao2');
+let missao3 = document.getElementById('missao3');
 
 function cenaDireita(){
     let cena1;
