@@ -3,7 +3,7 @@ let jogador = {
 }
 
 function abrirPortaMissao1(){
-    porta1 = document.getElementById('porta1');
+    let porta1 = document.getElementById('porta1');
     if(jogador.chave == false){
         porta1.style.animation = "none";
         porta1.offsetHeight;
