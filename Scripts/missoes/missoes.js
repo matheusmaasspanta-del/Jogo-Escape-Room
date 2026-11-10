@@ -16,12 +16,22 @@ let missao2 = document.getElementById("missao2");
 let missao3 = document.getElementById("missao3");
 
 function cenaDireita(){
+    let cena1;
+    let cena2;
+    let cena3;
+
     if(missao1.style.display == 'block'){
-        
+        cena1 = document.getElementById('cena1_missao1');
+        cena2 = document.getElementById('cena2_missao1');
+        cena3 = document.getElementById('cena3_missao1');
     }else if(missao2.style.display == 'block'){
-
+        cena1 = document.getElementById('cena1_missao2');
+        cena2 = document.getElementById('cena2_missao2');
+        cena3 = document.getElementById('cena3_missao2');
     }else{
-
+        cena1 = document.getElementById('cena1_missao3');
+        cena2 = document.getElementById('cena2_missao3');
+        cena3 = document.getElementById('cena3_missao3');
     }
 }
 
