@@ -1,5 +1,6 @@
 let jogador = {
     chave: false,
+    papelComCodigoMissao1: false, 
 }
 
 let portaMissao1 = {
@@ -17,6 +18,10 @@ function abrirPortaMissao1(){
         portaMissao1.aberta = true;
         portaMissao1.fechada = false;
     }
+}
+
+function abrirBauMissao1(){
+    let bau1Fechado = document.getElementById('bau1Fechado');
 }
 
 let missao1 = document.getElementById('missao1');

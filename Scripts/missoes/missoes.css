@@ -48,6 +48,21 @@ body{
     z-index: 1;
 }
 
+#cena2_missao1{
+    background-image: url(../../Sprites/Background2.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+#cena3_missao1{
+    background-image: url(../../Sprites/Background3.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
 
 .porta{
     position: absolute;
@@ -77,6 +92,59 @@ body{
     75%{
         transform: translate(-50%,-50%) translateX(-5px);
     }
+}
+
+#vasoDeFlor{
+    position: absolute;
+
+    width: 60px;
+    height: 120px;
+
+    right: 20%;
+    top: 31%;
+
+    background-image: url(../../Sprites/Planta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+#vasoDeFlorClicavel{
+    position: absolute;
+
+    width: 60px;
+    height: 120px;
+
+    left: 20%;
+    top: 31%;
+
+    background-image: url(../../Sprites/Planta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+
+.bau{
+    position: absolute;
+    display: none;
+
+    width: 130px;
+    height: 65px;
+    background-image: url(../../Sprites/bauFechado.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+
+#bau1Fechado{
+    display: block;
+
+    left: 50%;
+    top: 80%;
+
+    transform: translate(-50%, -50%);
 }
 
 .seta{
