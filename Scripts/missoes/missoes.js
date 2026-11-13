@@ -2,12 +2,20 @@ let jogador = {
     chave: false,
 }
 
+let portaMissao1 = {
+    fechada: true,
+    aberta: false,
+}
+
 function abrirPortaMissao1(){
     let porta1 = document.getElementById('porta1');
     if(jogador.chave == false){
         porta1.style.animation = "none";
         porta1.offsetHeight;
         porta1.style.animation = "animacaoPorta 0.1s";
+    }else{
+        portaMissao1.aberta = true;
+        portaMissao1.fechada = false;
     }
 }
 
