@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Chango&family=DynaPuff:wght@400..700&family=Jacquard+12&family=Odibee+Sans&family=Pacifico&family=Press+Start+2P&family=Rye&family=Silkscreen:wght@400;700&display=swap');
 *{margin: 0;padding: 0;image-rendering: pixelated;}
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Chango&family=DynaPuff:wght@400..700&family=Jacquard+12&family=Odibee+Sans&family=Pacifico&family=Rye&family=Silkscreen:wght@400;700&display=swap');
 html, body{
     overflow: hidden;
 }
 body{
     display: flex;
+
+    font-family: 'Silkscreen';
 
     justify-content: center;
     align-items: center;
@@ -90,23 +92,26 @@ body{
     width: 32px;
     height: 15px;
 
-    left: 45%;
+    left: 50%;
     top: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(6);
 
     background-image: url(../../Sprites/PapelSenha.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: scale(6);
 
     z-index: 3;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .codigoTexto{
-    font-family: 'Silkscreen', sans-serif;
-    transform: scale(0.6);
-    margin-right: 3px;
+    margin-bottom: 1%;
+    font-size: 8px;
+    text-align: center;
 }
 
 @keyframes animacaoPorta{

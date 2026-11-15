@@ -23,7 +23,7 @@ function mostrarPapelCodigo(){
             jogador.codigoMissao1 = gerarCodigo();
         }
         papel.innerHTML = `<p class="codigoTexto"><strong>${jogador.codigoMissao1}</strong></p>`
-        papel.style.display = 'block';
+        papel.style.display = 'flex';
         jogador.papelComCodigoMissao1 = true;
     }
 }
