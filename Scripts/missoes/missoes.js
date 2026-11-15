@@ -1,6 +1,7 @@
 let jogador = {
     chave: false,
     papelComCodigoMissao1: false, 
+    codigoMissao1: null,
 }
 
 // Missão 1
@@ -10,9 +11,18 @@ let portaMissao1 = {
     aberta: false,
 }
 
+function gerarCodigo(){
+    let codigo = Math.floor(Math.random() * 9000) + 1000;
+    return codigo;
+}
+
 function mostrarPapelCodigo(){
     let papel = document.getElementById('codigo1');
     if(jogador.papelComCodigoMissao1 == false){
+        if(jogador.codigoMissao1 == null){
+            jogador.codigoMissao1 = gerarCodigo();
+        }
+        papel.innerHTML = `<p class="codigoTexto"><strong>${jogador.codigoMissao1}</strong></p>`
         papel.style.display = 'block';
         jogador.papelComCodigoMissao1 = true;
     }
