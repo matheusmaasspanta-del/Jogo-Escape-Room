@@ -3,9 +3,24 @@ let jogador = {
     papelComCodigoMissao1: false, 
 }
 
+// Missão 1
+
 let portaMissao1 = {
     fechada: true,
     aberta: false,
+}
+
+function mostrarPapelCodigo(){
+    let papel = document.getElementById('codigo1');
+    if(jogador.papelComCodigoMissao1 == false){
+        papel.style.display = 'block';
+        jogador.papelComCodigoMissao1 = true;
+    }
+}
+
+function esconderPapel(){
+    let papel = document.getElementById('codigo1');
+    papel.style.display = 'none';
 }
 
 function abrirPortaMissao1(){
@@ -23,6 +38,8 @@ function abrirPortaMissao1(){
 function abrirBauMissao1(){
     let bau1Fechado = document.getElementById('bau1Fechado');
 }
+
+// Trocar cenas
 
 let missao1 = document.getElementById('missao1');
 let missao2 = document.getElementById('missao2');
@@ -59,7 +76,7 @@ function cenaDireita(){
         cenasMissao1[cena].style.display = 'block';
     }else if(getComputedStyle(missao2).display == 'block'){
         for(let i = 0; i < cenasMissao2.length; i++){
-            cenasMissao1[i].style.display = 'none';
+            cenasMissao2[i].style.display = 'none';
         };
         cena++;
         if(cena >= cenasMissao2.length){

@@ -83,6 +83,26 @@ body{
     z-index: 2;
 }
 
+#codigo1{
+    position: absolute;
+    display: none;
+
+    width: 32px;
+    height: 15px;
+
+    left: 45%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url(../../Sprites/PapelSenha.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: scale(6);
+
+    z-index: 3;
+}
+
 @keyframes animacaoPorta{
     from, to{
         transform: translate(-50%,-50%) translateX(0);
