@@ -85,6 +85,18 @@ body{
     z-index: 2;
 }
 
+@keyframes animacaoPorta{
+    from, to{
+        transform: translate(-50%,-50%) translateX(0);
+    }
+    25%{
+        transform: translate(-50%,-50%) translateX(5px);
+    }
+    75%{
+        transform: translate(-50%,-50%) translateX(-5px);
+    }
+}
+
 #codigo1{
     position: absolute;
     display: none;
@@ -112,18 +124,6 @@ body{
     margin-bottom: 1%;
     font-size: 8px;
     text-align: center;
-}
-
-@keyframes animacaoPorta{
-    from, to{
-        transform: translate(-50%,-50%) translateX(0);
-    }
-    25%{
-        transform: translate(-50%,-50%) translateX(5px);
-    }
-    75%{
-        transform: translate(-50%,-50%) translateX(-5px);
-    }
 }
 
 #vasoDeFlor{
@@ -177,6 +177,60 @@ body{
     top: 80%;
 
     transform: translate(-50%, -50%);
+}
+
+@keyframes animacaoBau{
+    from, to{
+        transform: translate(-50%,-50%) translateX(0);
+    }
+    25%{
+        transform: translate(-50%,-50%) translateX(5px);
+    }
+    75%{
+        transform: translate(-50%,-50%) translateX(-5px);
+    }
+}
+
+#fechadura1{
+    position: absolute;
+
+    width: 14px;
+    height: 20px;
+
+    background-image: url(../../Sprites/fechadura_digital.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%) scale(6);
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    z-index: 3;
+}
+
+#visor {
+    width: 75%;
+    height: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #131212;
+    border: 2px solid black;
+
+    color: #58ff83;
+
+    font-family: 'Silkscreen';
+    font-size: 6px;
+
+    text-align: center;
+    outline: none;
 }
 
 .seta{

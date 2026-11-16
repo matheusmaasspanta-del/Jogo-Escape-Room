@@ -47,6 +47,17 @@ function abrirPortaMissao1(){
 
 function abrirBauMissao1(){
     let bau1Fechado = document.getElementById('bau1Fechado');
+    let fechadura = document.getElementById('fechadura1');
+    let visor = document.getElementById('visor');
+
+    if(jogador.papelComCodigoMissao1 == false){
+        bau1Fechado.style.animation = "none";
+        bau1Fechado.offsetHeight;
+        bau1Fechado.style.animation = "animacaoBau 0.1s";
+    }else{
+        fechadura.style.display = 'flex';
+        
+    }
 }
 
 // Trocar cenas

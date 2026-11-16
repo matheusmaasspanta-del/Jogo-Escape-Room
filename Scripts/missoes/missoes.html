@@ -26,6 +26,18 @@
             <div id="cena3_missao1" class="cena">
                 <div id="bau1Fechado" class="bau" onclick="abrirBauMissao1()"></div>
                 <div id="bau1Aberto" class="bau"></div>
+
+                <div id="fechadura1" class="fechaduraDigital">
+                    <input
+                        type="text"
+                        id="visor"
+                        maxlength="4"
+                        inputmode="numeric"
+                        placeholder="----"
+                        autocomplete="off"
+                    >
+                    <button onclick="confirmarCodigoMissao1()">OK</button>
+                </div>
             </div>
         </div>
         <div id="missao2" class="missoes">
