@@ -6,11 +6,6 @@ let jogador = {
 
 // Missão 1
 
-let portaMissao1 = {
-    fechada: true,
-    aberta: false,
-}
-
 function gerarCodigo(){
     let codigo = Math.floor(Math.random() * 9000) + 1000;
     return codigo;
@@ -35,20 +30,20 @@ function esconderPapel(){
 
 function abrirPortaMissao1(){
     let porta1 = document.getElementById('porta1');
+    let porta1Aberta = document.getElementById('porta1Aberta');
     if(jogador.chave == false){
         porta1.style.animation = "none";
         porta1.offsetHeight;
         porta1.style.animation = "animacaoPorta 0.1s";
     }else{
-        portaMissao1.aberta = true;
-        portaMissao1.fechada = false;
+        porta1.style.display = 'none';
+        porta1Aberta.style.display = 'block';
     }
 }
 
 function abrirBauMissao1(){
     let bau1Fechado = document.getElementById('bau1Fechado');
     let fechadura = document.getElementById('fechadura1');
-    let visor = document.getElementById('visor');
 
     if(jogador.papelComCodigoMissao1 == false){
         bau1Fechado.style.animation = "none";
@@ -64,11 +59,23 @@ function confirmarCodigoMissao1(){
     let visor1 = document.getElementById('visor');
     let bau1Fechado = document.getElementById('bau1Fechado');
     let bau1Aberto = document.getElementById('bau1Aberto');
+    let chave = document.getElementById('chave');
     if(visor1.value == jogador.codigoMissao1){
         fechadura.style.display = 'none';
         bau1Fechado.style.display = 'none';
         bau1Aberto.style.display = 'block';
+        chave.style.display = 'block';
+    }else{
+        fechadura.style.animation = 'none';
+        fechadura.offsetHeight;
+        fechadura.style.animation = 'animacaoFechadura 0.1s';
     }
+}
+
+function pegarChave(){
+    let chave = document.getElementById('chave');
+    chave.style.display = 'none';
+    jogador.chave = true;
 }
 
 // Trocar cenas

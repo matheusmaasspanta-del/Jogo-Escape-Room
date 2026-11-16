@@ -81,8 +81,16 @@ body{
     background-image: url(../../Sprites/Porta_fechada.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
 
     z-index: 2;
+}
+#porta1Aberta{
+    display: none;
+
+    background-image: url(../../Sprites/Porta_aberta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 @keyframes animacaoPorta{
@@ -124,6 +132,7 @@ body{
     margin-bottom: 1%;
     font-size: 8px;
     text-align: center;
+    cursor: pointer;
 }
 
 #vasoDeFlor{
@@ -154,6 +163,8 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
+    cursor: pointer;
+
     z-index: 2;
 }
 
@@ -175,6 +186,8 @@ body{
 
     left: 50%;
     top: 80%;
+
+    cursor: pointer;
 
     transform: translate(-50%, -50%);
 }
@@ -241,6 +254,7 @@ body{
 
     text-align: center;
     outline: none;
+    cursor: pointer;
     transform: scale(0.5);
     position:absolute;
     top: -1px;
@@ -250,7 +264,8 @@ body{
     width: 15px;
     height: 7px;
 
-    box-sizing: border-box;
+    cursor: pointer;
+
 
     background-color: transparent;
     border: none;
@@ -268,6 +283,37 @@ body{
     margin-left: 3px;
 }
 
+@keyframes animacaoFechadura {
+    from, to{
+        transform: translate(-50%,-50%) translateX(0) scale(6);
+    }
+    25%{
+        transform: translate(-50%,-50%) translateX(5px) scale(6);
+    }
+    75%{
+        transform: translate(-50%,-50%) translateX(-5px) scale(6);
+    }
+}
+
+#chave{
+    position: absolute;
+    display: none;
+
+    width: 108px;
+    height: 42px;
+
+    background-image: url(../../Sprites/Chave.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
 .seta{
     position:absolute;
 
@@ -276,6 +322,8 @@ body{
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
+    cursor: pointer;
 
     z-index: 5;
 }
