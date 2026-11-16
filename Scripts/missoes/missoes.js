@@ -56,7 +56,18 @@ function abrirBauMissao1(){
         bau1Fechado.style.animation = "animacaoBau 0.1s";
     }else{
         fechadura.style.display = 'flex';
-        
+    }
+}
+
+function confirmarCodigoMissao1(){
+    let fechadura = document.getElementById('fechadura1');
+    let visor1 = document.getElementById('visor');
+    let bau1Fechado = document.getElementById('bau1Fechado');
+    let bau1Aberto = document.getElementById('bau1Aberto');
+    if(visor1.value == jogador.codigoMissao1){
+        fechadura.style.display = 'none';
+        bau1Fechado.style.display = 'none';
+        bau1Aberto.style.display = 'block';
     }
 }
 

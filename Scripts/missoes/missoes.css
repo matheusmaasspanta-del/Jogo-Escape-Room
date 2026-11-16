@@ -179,6 +179,16 @@ body{
     transform: translate(-50%, -50%);
 }
 
+#bau1Aberto{
+    position: absolute;
+    width: 130px;
+    height: 75px;
+    background-image: url(../../Sprites/bauAberto.png);
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+}
+
 @keyframes animacaoBau{
     from, to{
         transform: translate(-50%,-50%) translateX(0);
