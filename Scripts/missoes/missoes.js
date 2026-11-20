@@ -2,7 +2,12 @@ let jogador = {
     chave: false,
     papelComCodigoMissao1: false, 
     codigoMissao1: null,
+    obsidians: 0,
 }
+
+let missao1 = document.getElementById('missao1');
+let missao2 = document.getElementById('missao2');
+let missao3 = document.getElementById('missao3');
 
 // Missão 1
 
@@ -78,11 +83,40 @@ function pegarChave(){
     jogador.chave = true;
 }
 
+function avancarMissao(){
+    let concluir;
+    if(getComputedStyle(missao1).display == 'block'){
+        concluir = document.getElementById('conclusaoMissao1');
+        concluir.style.display = 'block';
+    }
+    else if(getComputedStyle(missao2).display == 'block'){
+
+    }
+    else{
+
+    }
+}
+
+function tempoMissao(){
+    
+}
+
+function concluirMissao(){
+    if(getComputedStyle(missao1).display == 'block'){
+        missao1.style.display = 'none';
+        missao2.style.display = 'block';
+    }
+    else if(getComputedStyle(missao2).display == 'block'){
+        missao2.style.display = 'none';
+        missao3.style.display = 'block';
+    }
+    else{
+        
+    }
+}
+
 // Trocar cenas
 
-let missao1 = document.getElementById('missao1');
-let missao2 = document.getElementById('missao2');
-let missao3 = document.getElementById('missao3');
 
 let cenasMissao1 = [
     document.getElementById('cena1_missao1'),

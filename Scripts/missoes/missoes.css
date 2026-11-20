@@ -28,6 +28,18 @@ body{
     
 }
 
+.tempo{
+    position: absolute;
+    
+    height: 20px;
+    width: 30px;
+
+    left: 10px;
+    top: 10px;
+
+    z-index: 4;
+}
+
 /* Missão 1 */
 
 #missao1{
