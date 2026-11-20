@@ -28,6 +28,8 @@ body{
     
 }
 
+/* Missão 1 */
+
 #missao1{
     display: block;
 }
@@ -342,6 +344,97 @@ body{
     top:50%;
 
     transform: translate(0%,-50%);
+}
+
+/* Missão 2 */
+
+/* Missão 3 */
+
+/* FIM */
+
+/* Tela de Conclusão */
+
+.conclusaoMissao{
+    display: none;
+    height: 120px;
+    width: 160px;
+
+    position: absolute;
+
+    background-image: url(../../Sprites/ConclusaoMissao.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+}
+
+.obsidian{
+    height: 20px;
+    width: 12px;
+
+    display: none;
+
+    position: absolute;
+
+    background-image: url(../../Sprites/Obsidiana_Abissal.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 11;
+}
+
+#obsidian1Missao1{
+    /* display: block; */
+    left: 46px;
+    top: 21px;
+}
+
+#obsidian2Missao1{
+    /* display: block; */
+    left: 79px;
+    top: 22%;
+    transform: translate(-50%, -50%);
+}
+
+#obsidian3Missao1{
+    /* display: block; */
+    right: 47px;
+    top: 21px;
+}
+#avancar1{
+    width: 45px;
+    height: 20px;
+    position: absolute;
+
+    cursor: pointer;
+
+
+    background-color: #141414;
+    border: black 1px solid;
+
+    color: #fafafa;
+
+    font-family: 'Silkscreen';
+    font-size: 5px;
+
+    left: 50%;
+    bottom: 18%;
+
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+.mostrarTempoFinal{
+    font-size: 10px;
+    position: absolute;
+
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
 }
 
 @media (orientation: portrait) {
