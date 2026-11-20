@@ -1,4 +1,8 @@
 let jogador = {
+    concluirMissao1: false,
+    concluirMissao2: false,
+    concluirMissao3: false,
+
     chave: false,
     papelComCodigoMissao1: false, 
     codigoMissao1: null,
@@ -86,42 +90,65 @@ function pegarChave(){
 function avancarMissao(){
     let concluir;
     if(getComputedStyle(missao1).display == 'block'){
+        pararRelogio();
+
         concluir = document.getElementById('conclusaoMissao1');
         concluir.style.display = 'block';
+        jogador.concluirMissao1 = true;
+        document.getElementById('tempoFinalMissao1').innerHTML = `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2,'0')}`;
     }
     else if(getComputedStyle(missao2).display == 'block'){
-
+        jogador.concluirMissao2 = true;
     }
     else{
-
+        jogador.concluirMissao3 = true;
     }
 }
 
 let minutos = 0;
 let segundos = 0;
+let intervaloRelogio;
+let relogio = document.getElementById('relogio');
+
 function tempoMissao(){
     segundos++;
     if(segundos >= 60){
         segundos = 0;
         minutos++;
     }
-    let relogio = document.getElementById('relogio');
 
     let s = String(segundos).padStart(2, '0');
     let m = String(minutos).padStart(2, '0');
 
     relogio.innerHTML = `${m}:${s}`;
 }
-setInterval(tempoMissao, 1000);
+
+function iniciarRelogio(){
+    intervaloRelogio = setInterval(tempoMissao, 1000);
+}
+function pararRelogio(){
+    intervaloRelogio = clearInterval(intervaloRelogio);
+}
+
+function resetarRelogio(){
+    clearInterval(intervaloRelogio);
+    minutos = 0;
+    segundos = 0;
+
+    relogio.innerHTML = '00:00';
+    iniciarRelogio();
+}
 
 function concluirMissao(){
     if(getComputedStyle(missao1).display == 'block'){
         missao1.style.display = 'none';
         missao2.style.display = 'block';
+        resetarRelogio();
     }
     else if(getComputedStyle(missao2).display == 'block'){
         missao2.style.display = 'none';
         missao3.style.display = 'block';
+        resetarRelogio();
     }
     else{
         
