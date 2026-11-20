@@ -97,9 +97,22 @@ function avancarMissao(){
     }
 }
 
+let minutos = 0;
+let segundos = 0;
 function tempoMissao(){
-    
+    segundos++;
+    if(segundos >= 60){
+        segundos = 0;
+        minutos++;
+    }
+    let relogio = document.getElementById('relogio');
+
+    let s = String(segundos).padStart(2, '0');
+    let m = String(minutos).padStart(2, '0');
+
+    relogio.innerHTML = `${m}:${s}`;
 }
+setInterval(tempoMissao, 1000);
 
 function concluirMissao(){
     if(getComputedStyle(missao1).display == 'block'){
