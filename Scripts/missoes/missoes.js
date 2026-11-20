@@ -2,12 +2,17 @@ let jogador = {
     concluirMissao1: false,
     concluirMissao2: false,
     concluirMissao3: false,
-
+    
     chave: false,
     papelComCodigoMissao1: false, 
     codigoMissao1: null,
     obsidians: 0,
 }
+
+let minutos = 0;
+let segundos = 0;
+let intervaloRelogio;
+let relogio = document.getElementById('relogio');
 
 let missao1 = document.getElementById('missao1');
 let missao2 = document.getElementById('missao2');
@@ -87,28 +92,49 @@ function pegarChave(){
     jogador.chave = true;
 }
 
+
 function avancarMissao(){
     let concluir;
     if(getComputedStyle(missao1).display == 'block'){
         pararRelogio();
+        let tempoTotal = (minutos * 60) + segundos;
+
 
         concluir = document.getElementById('conclusaoMissao1');
         concluir.style.display = 'block';
         jogador.concluirMissao1 = true;
         document.getElementById('tempoFinalMissao1').innerHTML = `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2,'0')}`;
+        
+        let obsidian1 = document.getElementById('obsidian1Missao1');
+        let obsidian2 = document.getElementById('obsidian2Missao1');
+        let obsidian3 = document.getElementById('obsidian3Missao1');
+        
+        obsidian1.style.display = 'block';
+        obsidian2.style.display = 'block';
+        obsidian3.style.display = 'block';
+        
+        if(tempoTotal >= 25 && tempoTotal <= 50){
+            obsidian3.style.display = 'none';
+            jogador.obsidians += 2;
+        }else if(tempoTotal > 50){
+            obsidian2.style.display = 'none';
+            obsidian3.style.display = 'none';
+            jogador.obsidians += 1;
+        }else{
+            jogador.obsidians += 3;
+        }
     }
     else if(getComputedStyle(missao2).display == 'block'){
         jogador.concluirMissao2 = true;
+        let tempoTotal = (minutos * 60) + segundos;
     }
     else{
         jogador.concluirMissao3 = true;
+        let tempoTotal = (minutos * 60) + segundos;
+
     }
 }
 
-let minutos = 0;
-let segundos = 0;
-let intervaloRelogio;
-let relogio = document.getElementById('relogio');
 
 function tempoMissao(){
     segundos++;
@@ -239,3 +265,5 @@ function cenaEsquerda(){
         cenasMissao3[cena].style.display = 'block';
     }
 }
+
+iniciarRelogio();
