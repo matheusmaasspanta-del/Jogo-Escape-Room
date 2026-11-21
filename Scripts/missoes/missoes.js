@@ -6,6 +6,9 @@ let jogador = {
     chave: false,
     papelComCodigoMissao1: false, 
     codigoMissao1: null,
+
+    portaDestrancada: false,
+
     obsidians: 0,
 }
 
@@ -92,6 +95,19 @@ function pegarChave(){
     jogador.chave = true;
 }
 
+// missão 2
+
+function abrirPortaMissao2(){
+    let porta2 = document.getElementById('porta2');
+    let porta2Aberta = document.getElementById('porta2Aberta');
+    if(jogador.portaDestrancada == false){
+        porta2.style.animation = "none";
+        porta2.offsetHeight;
+        porta2.style.animation = "animacaoPorta 0.1s";
+    }
+}
+
+// geral
 
 function avancarMissao(){
     let concluir;
@@ -169,6 +185,7 @@ function concluirMissao(){
     if(getComputedStyle(missao1).display == 'block'){
         missao1.style.display = 'none';
         missao2.style.display = 'block';
+        document.getElementById('cena1_missao2').style.display = 'block';
         resetarRelogio();
     }
     else if(getComputedStyle(missao2).display == 'block'){

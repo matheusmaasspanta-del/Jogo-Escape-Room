@@ -92,31 +92,23 @@ body{
 
     transform: translate(-50%, -50%);
 
-    background-image: url(../../Sprites/Porta_fechada.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     cursor: pointer;
 
     z-index: 2;
 }
+
+#porta1{
+    background-image: url(../../Sprites/Porta_fechada.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 #porta1Aberta{
     display: none;
 
     background-image: url(../../Sprites/Porta_aberta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-@keyframes animacaoPorta{
-    from, to{
-        transform: translate(-50%,-50%) translateX(0);
-    }
-    25%{
-        transform: translate(-50%,-50%) translateX(5px);
-    }
-    75%{
-        transform: translate(-50%,-50%) translateX(-5px);
-    }
 }
 
 #codigo1{
@@ -360,6 +352,117 @@ body{
 
 /* Missão 2 */
 
+#cena1_missao2{
+    background-image: url(../../Sprites/background1Missao2.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+#porta2{
+    position: absolute;
+
+    width: 85px;
+    height: 120px;
+
+    left: 50%;
+    top: 65%;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url(../../Sprites/porta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    z-index: 2;
+}
+#porta2Aberta{
+    display: none;
+
+    background-image: url(../../Sprites/Porta_aberta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#cena2_missao2{
+    background-image: url(../../Sprites/background2Missao2.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+.piano{
+    position: absolute;
+
+    height: 110px;
+    width: 130px;
+
+    left: 50%;
+    bottom: 4px;
+
+    transform: translate(-50%);
+
+    background-image: url(../../Sprites/Piano.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+
+#cena3_missao2{
+    background-image: url(../../Sprites/background3Missao2.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+.quadro{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    z-index: 2;
+}
+#quadro1{
+    background-image: url(../../Sprites/quadro1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    left: 50%;
+    top: 15%;
+}
+#quadro2{
+    background-image: url(../../Sprites/quadro2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    left: 25%;
+    top: 30%;
+}
+#quadro3{
+    background-image: url(../../Sprites/quadro3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    right: 25%;
+    top: 50%;
+}
+
+#quadroNotas{
+    width: 46px;
+    height: 20px;
+    background-color: #e4c997 ;
+    border: black 1px solid;
+
+    font-size: 5px;
+
+    left: 40%;
+    bottom: 35%;
+}
+
 /* Missão 3 */
 
 /* FIM */
@@ -447,6 +550,18 @@ body{
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
+}
+
+@keyframes animacaoPorta{
+    from, to{
+        transform: translate(-50%,-50%) translateX(0);
+    }
+    25%{
+        transform: translate(-50%,-50%) translateX(5px);
+    }
+    75%{
+        transform: translate(-50%,-50%) translateX(-5px);
+    }
 }
 
 @media (orientation: portrait) {
