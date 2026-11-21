@@ -8,6 +8,7 @@ let jogador = {
     codigoMissao1: null,
 
     portaDestrancada: false,
+    teclas: null,
 
     obsidians: 0,
 }
@@ -104,6 +105,33 @@ function abrirPortaMissao2(){
         porta2.style.animation = "none";
         porta2.offsetHeight;
         porta2.style.animation = "animacaoPorta 0.1s";
+    }
+}
+
+let teclas = ['teclasC7M', 'teclasDm7', 'teclasG7'];
+
+function gerarCombinacaoTeclas(){
+    let tecla = Math.floor(Math.random() * 3);
+
+    return teclas[tecla];
+}
+
+function iniciarCombinacaoTeclas(){
+    if(jogador.teclas == null){
+        jogador.teclas = gerarCombinacaoTeclas();
+    }
+}
+
+function mostrarTeclas(){
+    iniciarCombinacaoTeclas();
+    let combinacaoTeclas = jogador.teclas;
+
+    if(combinacaoTeclas == 'teclasC7M'){
+        document.getElementById('teclasC7M').style.display = 'block';
+    }else if(combinacaoTeclas == 'teclasDm7'){
+        document.getElementById('teclasDm7').style.display = 'block';
+    }else{
+        document.getElementById('teclasG7').style.display = 'block';
     }
 }
 

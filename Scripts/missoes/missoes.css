@@ -390,26 +390,57 @@ body{
     background-image: url(../../Sprites/background2Missao2.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
-
+    
     z-index: 1;
 }
 
 .piano{
     position: absolute;
-
+    
     height: 110px;
     width: 130px;
-
+    
     left: 50%;
     bottom: 4px;
-
+    
     transform: translate(-50%);
-
+    
     background-image: url(../../Sprites/Piano.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     z-index: 2;
+}
+
+.teclas{
+    position: absolute;
+
+    display: none;
+
+    width: 64px;
+    height: 16px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%) scale(3);
+
+    z-index: 3;
+}
+#teclasC7M{
+    background-image: url(../../Sprites/TeclasC7M.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#teclasDm7{
+    background-image: url(../../Sprites/TeclasDm7.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#teclasG7{
+    background-image: url(../../Sprites/TeclasG7.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 #cena3_missao2{
@@ -462,6 +493,7 @@ body{
     left: 40%;
     bottom: 35%;
 }
+
 
 /* Missão 3 */
 
