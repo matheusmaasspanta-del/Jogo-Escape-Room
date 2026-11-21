@@ -101,7 +101,6 @@ function pegarChave(){
 
 function abrirPortaMissao2(){
     let porta2 = document.getElementById('porta2');
-    let porta2Aberta = document.getElementById('porta2Aberta');
     if(jogador.portaDestrancada == false){
         porta2.style.animation = "none";
         porta2.offsetHeight;
@@ -122,6 +121,7 @@ function confirmarCodigoMissao2(){
         porta.style.display = 'none';
         portaAberta.style.display = 'block';
         document.getElementById('fechadura2').style.display = 'none';
+        jogador.portaDestrancada = true;
     }else{
         fechadura.style.animation = 'none';
         fechadura.offsetHeight;
@@ -195,8 +195,32 @@ function avancarMissao(){
         }
     }
     else if(getComputedStyle(missao2).display == 'block'){
-        jogador.concluirMissao2 = true;
+        pararRelogio();
         let tempoTotal = (minutos * 60) + segundos;
+
+        concluir = document.getElementById('conclusaoMissao2');
+        concluir.style.display = 'block';
+        jogador.concluirMissao2 = true;
+        document.getElementById('tempoFinalMissao2').innerHTML = `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+
+        let obsidian1 = document.getElementById('obsidian1Missao2');
+        let obsidian2 = document.getElementById('obsidian2Missao2');
+        let obsidian3 = document.getElementById('obsidian3Missao2');
+
+        obsidian1.style.display = 'block';
+        obsidian2.style.display = 'block';
+        obsidian3.style.display = 'block';
+        
+        if(tempoTotal >= 25 && tempoTotal <= 50){
+            obsidian3.style.display = 'none';
+            jogador.obsidians += 2;
+        }else if(tempoTotal > 50){
+            obsidian2.style.display = 'none';
+            obsidian3.style.display = 'none';
+            jogador.obsidians += 1;
+        }else{
+            jogador.obsidians += 3;
+        }
     }
     else{
         jogador.concluirMissao3 = true;

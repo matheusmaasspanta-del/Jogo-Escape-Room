@@ -16,9 +16,9 @@
                 <div id="porta1" class="porta" onclick="abrirPortaMissao1()"></div>
                 <div id="porta1Aberta" class="porta" onclick="avancarMissao()"></div>
                 <div id="conclusaoMissao1" class="conclusaoMissao">
-                    <div id="obsidian1Missao1" class="obsidian"></div>
-                    <div id="obsidian2Missao1" class="obsidian"></div>
-                    <div id="obsidian3Missao1" class="obsidian"></div>
+                    <div id="obsidian1Missao1" class="obsidian1 obsidian"></div>
+                    <div id="obsidian2Missao1" class="obsidian2 obsidian"></div>
+                    <div id="obsidian3Missao1" class="obsidian3 obsidian"></div>
                     <p id="mostrarTempoFinalMissao1" class="mostrarTempoFinal">Tempo: <span id="tempoFinalMissao1">--:--</span></p>
                     <button id="avancar1" class="avancar" onclick="concluirMissao()">Concluir</button>
                 </div>
@@ -56,7 +56,16 @@
         <div id="missao2" class="missoes">
             <div id="cena1_missao2" class="cena">
                 <div id="porta2" class="porta" onclick="abrirPortaMissao2()"></div>
-                <div id="porta2Aberta" class="porta"></div>
+                <div id="porta2Aberta" class="porta" onclick="avancarMissao()"></div>
+
+                <div id="conclusaoMissao2" class="conclusaoMissao">
+                    <div id="obsidian1Missao2" class="obsidian1 obsidian"></div>
+                    <div id="obsidian2Missao2" class="obsidian2 obsidian"></div>
+                    <div id="obsidian3Missao2" class="obsidian3 obsidian"></div>
+                    <p id="mostrarTempoFinalMissao2" class="mostrarTempoFinal">Tempo: <span id="tempoFinalMissao2">--:--</span></p>
+                    <button id="avancar2" class="avancar" onclick="concluirMissao()">Concluir</button>
+                </div>
+
                 <div id="fechadura2" class="fechaduraDigital" onclick="digitarFechadura()"></div>
                 <div id="fechadura2Selecionada" class="fechaduraDigital">
                     <input

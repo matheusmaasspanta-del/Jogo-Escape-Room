@@ -648,25 +648,26 @@ body{
     z-index: 11;
 }
 
-#obsidian1Missao1{
+.obsidian1{
     /* display: block; */
     left: 46px;
     top: 21px;
 }
 
-#obsidian2Missao1{
+.obsidian2{
     /* display: block; */
     left: 79px;
     top: 22%;
     transform: translate(-50%, -50%);
 }
 
-#obsidian3Missao1{
+.obsidian3{
     /* display: block; */
     right: 47px;
     top: 21px;
 }
-#avancar1{
+
+.avancar{
     width: 45px;
     height: 20px;
     position: absolute;
