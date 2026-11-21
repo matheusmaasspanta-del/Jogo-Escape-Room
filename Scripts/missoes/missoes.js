@@ -133,6 +133,8 @@ function mostrarTeclas(){
     }else{
         document.getElementById('teclasG7').style.display = 'block';
     }
+
+    document.getElementById('teclas').style.display = 'block';
 }
 
 // geral
