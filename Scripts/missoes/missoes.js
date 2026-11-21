@@ -9,6 +9,7 @@ let jogador = {
 
     portaDestrancada: false,
     teclas: null,
+    codigoMissao2: null,
 
     obsidians: 0,
 }

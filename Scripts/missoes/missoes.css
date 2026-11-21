@@ -386,6 +386,24 @@ body{
     background-repeat: no-repeat;
 }
 
+#fechadura2{
+    position: absolute;
+
+    width: 14px;
+    height: 20px;
+
+    background-image: url(../../Sprites/fechadura_digital.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    left: 50%;
+    bottom: 15%;
+
+    transform: translate(-50%);
+
+    z-index: 3;
+}
+
 #cena2_missao2{
     background-image: url(../../Sprites/background2Missao2.png);
     background-size:100% 100%;
@@ -533,7 +551,6 @@ body{
     left: 40%;
     bottom: 35%;
 }
-
 
 /* Missão 3 */
 
