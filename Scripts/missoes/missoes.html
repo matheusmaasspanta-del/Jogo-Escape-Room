@@ -57,9 +57,16 @@
             <div id="cena1_missao2" class="cena">
                 <div id="porta2" class="porta" onclick="abrirPortaMissao2()"></div>
                 <div id="porta2Aberta" class="porta"></div>
-                <div id="fechadura2" class="fechaduraDigital"></div>
+                <div id="fechadura2" class="fechaduraDigital" onclick="digitarFechadura()"></div>
                 <div id="fechadura2Selecionada" class="fechaduraDigital">
-                    
+                    <input
+                        type="text"
+                        id="visorMissao2"
+                        maxlength="3"
+                        placeholder="---"
+                        autocomplete="off"
+                    >
+                    <button id="okMissao2" onclick="confirmarCodigoMissao2()">OK</button>
                 </div>
             </div>
 

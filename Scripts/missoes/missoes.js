@@ -109,6 +109,26 @@ function abrirPortaMissao2(){
     }
 }
 
+function digitarFechadura(){
+    document.getElementById('fechadura2Selecionada').style.display = 'flex';
+}
+function confirmarCodigoMissao2(){
+    let fechadura = document.getElementById('fechadura2Selecionada');
+    let visor = document.getElementById('visorMissao2');
+    let porta = document.getElementById('porta2');
+    let portaAberta = document.getElementById('porta2Aberta');
+    if(visor.value == jogador.codigoMissao2){
+        fechadura.style.display = 'none';
+        porta.style.display = 'none';
+        portaAberta.style.display = 'block';
+        document.getElementById('fechadura2').style.display = 'none';
+    }else{
+        fechadura.style.animation = 'none';
+        fechadura.offsetHeight;
+        fechadura.style.animation = 'animacaoFechadura 0.1s';
+    }
+}
+
 let teclas = ['teclasC7M', 'teclasDm7', 'teclasG7'];
 
 function gerarCombinacaoTeclas(){
@@ -129,10 +149,13 @@ function mostrarTeclas(){
 
     if(combinacaoTeclas == 'teclasC7M'){
         document.getElementById('teclasC7M').style.display = 'block';
+        jogador.codigoMissao2 = 'C7M';
     }else if(combinacaoTeclas == 'teclasDm7'){
         document.getElementById('teclasDm7').style.display = 'block';
+        jogador.codigoMissao2 = 'Dm7';
     }else{
         document.getElementById('teclasG7').style.display = 'block';
+        jogador.codigoMissao2 = 'G7';
     }
 
     document.getElementById('teclas').style.display = 'block';

@@ -289,31 +289,20 @@ body{
     margin-left: 3px;
 }
 
-@keyframes animacaoFechadura {
-    from, to{
-        transform: translate(-50%,-50%) translateX(0) scale(6);
-    }
-    25%{
-        transform: translate(-50%,-50%) translateX(5px) scale(6);
-    }
-    75%{
-        transform: translate(-50%,-50%) translateX(-5px) scale(6);
-    }
-}
 
 #chave{
     position: absolute;
     display: none;
-
+    
     width: 108px;
     height: 42px;
 
     background-image: url(../../Sprites/Chave.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     cursor: pointer;
-
+    
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
@@ -322,15 +311,15 @@ body{
 
 .seta{
     position:absolute;
-
+    
     height: 32px;
     width: 32px;
-
+    
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     cursor: pointer;
-
+    
     z-index: 5;
 }
 
@@ -338,7 +327,7 @@ body{
     background-image: url(../../Sprites/Cena_esquerda.png);
     left: 10px;
     top: 50%;
-
+    
     transform: translate(0%,-50%);
 }
 
@@ -346,7 +335,7 @@ body{
     background-image: url(../../Sprites/Cena_direita.png);
     right: 10px;
     top:50%;
-
+    
     transform: translate(0%,-50%);
 }
 
@@ -356,31 +345,31 @@ body{
     background-image: url(../../Sprites/background1Missao2.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
-
+    
     z-index: 1;
 }
 
 #porta2{
     position: absolute;
-
+    
     width: 85px;
     height: 120px;
-
+    
     left: 50%;
     top: 65%;
-
+    
     transform: translate(-50%, -50%);
-
+    
     background-image: url(../../Sprites/porta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
-
+    
     z-index: 2;
 }
 #porta2Aberta{
     display: none;
-
+    
     background-image: url(../../Sprites/Porta_aberta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -388,20 +377,87 @@ body{
 
 #fechadura2{
     position: absolute;
-
+    
     width: 14px;
     height: 20px;
-
+    
     background-image: url(../../Sprites/fechadura_digital.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     left: 50%;
     bottom: 15%;
-
+    
     transform: translate(-50%);
-
+    
     z-index: 3;
+}
+#fechadura2Selecionada{
+    position: absolute;
+    
+    width: 14px;
+    height: 20px;
+    
+    background-image: url(../../Sprites/fechadura_digital.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%) scale(6);
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+    z-index: 4;
+}
+#visorMissao2 {
+    width: 20px;
+    height: 10px;
+    
+    box-sizing: border-box;
+
+    background-color: #131212;
+    border: 2px solid black;
+
+    color: #58ff83;
+    
+    font-family: 'Press Start 2P';
+    font-size: 6px;
+    
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transform: scale(0.5);
+    position:absolute;
+    top: -1px;
+}
+
+#okMissao2{
+    width: 15px;
+    height: 7px;
+    
+    cursor: pointer;
+    
+    
+    background-color: transparent;
+    border: none;
+    
+    color: #fafafa;
+    
+    font-family: 'Silkscreen';
+    font-size: 5px;
+    
+    text-align: center;
+    outline: none;
+    transform: scale(0.3);
+    position:absolute;
+    top: 13px;
+    margin-left: 3px;
 }
 
 #cena2_missao2{
@@ -432,17 +488,17 @@ body{
 
 .teclas{
     position: absolute;
-
+    
     display: none;
-
+    
     width: 64px;
     height: 16px;
-
+    
     left: 50%;
     top: 50%;
-
+    
     transform: translate(-50%, -50%) scale(3);
-
+    
     z-index: 3;
 }
 #teclasC7M{
@@ -462,12 +518,12 @@ body{
 }
 .tecla{
     position: absolute;
-
+    
     height: 14px;
     width: 5px;
-
+    
     top: 1px;
-
+    
     z-index: 4;
 }
 #C{
@@ -505,7 +561,7 @@ body{
     background-image: url(../../Sprites/background3Missao2.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
-
+    
     z-index: 1;
 }
 
@@ -519,7 +575,7 @@ body{
     background-image: url(../../Sprites/quadro1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     left: 50%;
     top: 15%;
 }
@@ -527,7 +583,7 @@ body{
     background-image: url(../../Sprites/quadro2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     left: 25%;
     top: 30%;
 }
@@ -535,7 +591,7 @@ body{
     background-image: url(../../Sprites/quadro3.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     right: 25%;
     top: 50%;
 }
@@ -545,9 +601,9 @@ body{
     height: 20px;
     background-color: #e4c997 ;
     border: black 1px solid;
-
+    
     font-size: 5px;
-
+    
     left: 40%;
     bottom: 35%;
 }
@@ -562,33 +618,33 @@ body{
     display: none;
     height: 120px;
     width: 160px;
-
+    
     position: absolute;
-
+    
     background-image: url(../../Sprites/ConclusaoMissao.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     left: 50%;
     top: 50%;
-
+    
     transform: translate(-50%, -50%);
-
+    
     z-index: 10;
 }
 
 .obsidian{
     height: 20px;
     width: 12px;
-
+    
     display: none;
-
+    
     position: absolute;
-
+    
     background-image: url(../../Sprites/Obsidiana_Abissal.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    
     z-index: 11;
 }
 
@@ -614,28 +670,28 @@ body{
     width: 45px;
     height: 20px;
     position: absolute;
-
+    
     cursor: pointer;
-
-
+    
+    
     background-color: #141414;
     border: black 1px solid;
-
+    
     color: #fafafa;
-
+    
     font-family: 'Silkscreen';
     font-size: 5px;
-
+    
     left: 50%;
     bottom: 18%;
-
+    
     transform: translate(-50%, -50%);
     z-index: 11;
 }
 .mostrarTempoFinal{
     font-size: 10px;
     position: absolute;
-
+    
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
@@ -650,6 +706,18 @@ body{
     }
     75%{
         transform: translate(-50%,-50%) translateX(-5px);
+    }
+}
+
+@keyframes animacaoFechadura {
+    from, to{
+        transform: translate(-50%,-50%) translateX(0) scale(6);
+    }
+    25%{
+        transform: translate(-50%,-50%) translateX(5px) scale(6);
+    }
+    75%{
+        transform: translate(-50%,-50%) translateX(-5px) scale(6);
     }
 }
 
