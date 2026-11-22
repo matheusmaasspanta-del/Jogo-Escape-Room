@@ -610,6 +610,30 @@ body{
 
 /* Missão 3 */
 
+    #cena1_missao3{
+    background-image: url(../../Sprites/background1Missao3.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+
+#cena2_missao3{
+    background-image: url(../../Sprites/background2Missao3.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+
+#cena3_missao3{
+    background-image: url(../../Sprites/background3Missao3.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+
 /* FIM */
 
 /* Tela de Conclusão */
