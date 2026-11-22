@@ -11,6 +11,8 @@ let jogador = {
     teclas: null,
     codigoMissao2: null,
 
+    marreta: false;
+
     obsidians: 0,
 }
 
@@ -51,9 +53,7 @@ function abrirPortaMissao1(){
     let porta1 = document.getElementById('porta1');
     let porta1Aberta = document.getElementById('porta1Aberta');
     if(jogador.chave == false){
-        porta1.style.animation = "none";
-        porta1.offsetHeight;
-        porta1.style.animation = "animacaoPorta 0.1s";
+        tremer(porta1, 'animacaoPorta');
     }else{
         porta1.style.display = 'none';
         porta1Aberta.style.display = 'block';
@@ -65,9 +65,7 @@ function abrirBauMissao1(){
     let fechadura = document.getElementById('fechadura1');
 
     if(jogador.papelComCodigoMissao1 == false){
-        bau1Fechado.style.animation = "none";
-        bau1Fechado.offsetHeight;
-        bau1Fechado.style.animation = "animacaoBau 0.1s";
+        tremer(bau1Fechado, 'animacaoBau');
     }else{
         fechadura.style.display = 'flex';
     }
@@ -85,9 +83,7 @@ function confirmarCodigoMissao1(){
         bau1Aberto.style.display = 'block';
         chave.style.display = 'block';
     }else{
-        fechadura.style.animation = 'none';
-        fechadura.offsetHeight;
-        fechadura.style.animation = 'animacaoFechadura 0.1s';
+        tremer(fechadura, 'animacaoFechadura');
     }
 }
 
@@ -102,9 +98,7 @@ function pegarChave(){
 function abrirPortaMissao2(){
     let porta2 = document.getElementById('porta2');
     if(jogador.portaDestrancada == false){
-        porta2.style.animation = "none";
-        porta2.offsetHeight;
-        porta2.style.animation = "animacaoPorta 0.1s";
+        tremer(porta2, 'animacaoPorta');
     }
 }
 
@@ -123,9 +117,7 @@ function confirmarCodigoMissao2(){
         document.getElementById('fechadura2').style.display = 'none';
         jogador.portaDestrancada = true;
     }else{
-        fechadura.style.animation = 'none';
-        fechadura.offsetHeight;
-        fechadura.style.animation = 'animacaoFechadura 0.1s';
+        tremer(fechadura, 'animacaoFechadura');
     }
 }
 
@@ -161,7 +153,27 @@ function mostrarTeclas(){
     document.getElementById('teclas').style.display = 'block';
 }
 
+// missão 3
+
+function quebrar(){
+    let botaoTrancado = document.getElementById('botaoTrancado');
+    let botaoLiberto = document.getElementById('botaoLiberto');
+
+    if(jogador.marreta == false){
+        tremer(botaoTrancado, 'animacaoBotao');
+    }else{
+        botaoLiberto.style.display = 'block';
+        botaoTrancado.style.display = 'none';
+    }
+}
+
 // geral
+
+function tremer(elemento, animacao){
+    elemento.style.animation = 'none';
+    elemento.offsetHeight;
+    elemento.style.animation = `${animacao} 0.1s`;
+}
 
 function avancarMissao(){
     let concluir;

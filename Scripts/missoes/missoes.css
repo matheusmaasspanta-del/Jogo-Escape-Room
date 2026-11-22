@@ -803,6 +803,18 @@ body{
     transform: translate(-50%, -50%);
 }
 
+@keyframes animacaoBotao {
+    from, to{
+        transform: translate(-50%,-50%) translateX(0);
+    }
+    25%{
+        transform: translate(-50%,-50%) translateX(5px);
+    }
+    75%{
+        transform: translate(-50%,-50%) translateX(-5px);
+    }
+}
+
 @keyframes animacaoPorta{
     from, to{
         transform: translate(-50%,-50%) translateX(0);
