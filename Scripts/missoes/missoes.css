@@ -618,12 +618,93 @@ body{
     z-index: 1;
 }
 
+.pedestal{
+    position: absolute;
+    
+    width: 30px;
+    height: 80px;
+    
+    left: 50%;
+    bottom: 4px;
+    
+    transform: translate(-50%);
+    
+    background-image: url(../../Sprites/Pedestal.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    z-index: 2;
+}
+.laser{
+    position: absolute;
+    
+    width: 32px;
+    height: 172px;
+    
+    left: 50%;
+    bottom: 4px;
+    
+    transform: translate(-50%);
+    
+    background-image: url(../../Sprites/Laser.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    z-index: 3;
+}
+#AbyssalObsidian{
+    position: absolute;
+
+    width: 12px;
+    height: 20px;
+
+    left: 50%;
+    top: 35%;
+
+    transform: translate(-50%) scale(2);
+
+    background-image: url(../../Sprites/Obsidiana_Abissal.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+
 #cena2_missao3{
     background-image: url(../../Sprites/background2Missao3.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
     z-index: 1;
+}
+
+.botao{
+    position: absolute;
+
+    height: 64px;
+    width: 64px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
+#botaoTrancado{
+    background-image: url(../../Sprites/BotaoTrancado.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#botaoLiberto{
+    background-image: url(../../Sprites/BotaoLiberto.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: none;
 }
 
 #cena3_missao3{

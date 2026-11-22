@@ -269,6 +269,7 @@ function concluirMissao(){
     else if(getComputedStyle(missao2).display == 'block'){
         missao2.style.display = 'none';
         missao3.style.display = 'block';
+        document.getElementById('cena1_missao3').style.display = 'block';
         resetarRelogio();
     }
     else{
