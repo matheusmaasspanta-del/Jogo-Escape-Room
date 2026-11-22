@@ -361,4 +361,15 @@ function cenaEsquerda(){
     }
 }
 
+
+//Música:
+
+//Piano:
+
+function tocarPiano(nota){
+    let tocar = new Audio(`../../Sons/${nota}.mp3`);
+
+    tocar.play();
+}
+
 iniciarRelogio();
