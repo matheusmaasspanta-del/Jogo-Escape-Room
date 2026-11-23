@@ -371,6 +371,7 @@ function concluirMissao(){
         document.getElementById('seta_esquerda').style.display = 'none';
         document.getElementById('relogio').style.display = 'none';
         document.getElementById('inventario').style.display = 'none';
+        document.getElementById('diarioBotao').style.display = 'none';
     }
 }
 
