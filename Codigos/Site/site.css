@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Chango&family=DynaPuff:wght@400..700&family=Jacquard+12&family=Odibee+Sans&family=Pacifico&family=Press+Start+2P&family=Rye&family=Silkscreen:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080817;
+    color: white;
+    font-family: Silkscreen;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 5%;
+
+    background-color: #090817;
+    border-bottom: 3px solid #6425a8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #d6c7ed;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 55px;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: #d6c7ed;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #b45cff;
+}
+
+.menu-botao {
+    display: none;
+}
+
+.principal {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 60px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 5, 20, 0.95),
+            rgba(4, 5, 20, 0.45)
+        ),
+        url("imagens/laboratorio.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo {
+    max-width: 550px;
+}
+
+.conteudo img {
+        width: 300px;
+        height: 128px;
+}
+
+.botao-jogar {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 16px 35px;
+
+    background-color: #30105a;
+    border: 2px solid #a64cff;
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+
+    transition: 0.3s;
+}
+
+.botao-jogar:hover {
+    background-color: #7026b5;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 12px 5%;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .menu-botao {
+        display: block;
+
+        background: none;
+        border: 2px solid #7026b5;
+        border-radius: 5px;
+
+        color: #b45cff;
+        font-size: 28px;
+
+        padding: 2px 10px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0;
+
+        background-color: #090817;
+        border-bottom: 2px solid #7026b5;
+
+        z-index: 10;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+
+    .menu a {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+
+        border-top: 1px solid #29203e;
+    }
+
+    .principal {
+        min-height: 600px;
+
+        justify-content: center;
+        text-align: center;
+
+        padding: 50px 20px;
+
+        background-position: center;
+    }
+
+    .conteudo img {
+        width: 300px;
+        height: 128px;
+    }
+
+    .botao-jogar {
+        width: 50%;
+        font-size: 17px;
+    }
+}
