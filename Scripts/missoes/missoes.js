@@ -66,6 +66,8 @@ function abrirPortaMissao1(){
     }else{
         porta1.style.display = 'none';
         porta1Aberta.style.display = 'block';
+        let som = new Audio('../../Sons/abrirPorta.mp3');
+        som.play();
     }
 }
 
@@ -91,6 +93,9 @@ function confirmarCodigoMissao1(){
         bau1Fechado.style.display = 'none';
         bau1Aberto.style.display = 'block';
         chave.style.display = 'block';
+
+        let som = new Audio('../../Sons/abrirBau.mp3');
+        som.play();
     }else{
         tremer(fechadura, 'animacaoFechadura');
     }
@@ -129,6 +134,9 @@ function confirmarCodigoMissao2(){
         portaAberta.style.display = 'block';
         document.getElementById('fechadura2').style.display = 'none';
         jogador.portaDestrancada = true;
+
+        let som = new Audio('../../Sons/abrirPorta.mp3');
+        som.play();
     }else{
         tremer(fechadura, 'animacaoFechadura');
     }
@@ -189,6 +197,8 @@ function quebrar(){
         botaoLiberto.style.display = 'block';
         botaoTrancado.style.display = 'none';
         document.getElementById('botaoDiario').style.display = 'block';
+        let som = new Audio('../../Sons/quebrar.mp3');
+        som.play();
     }
 }
 
@@ -245,6 +255,8 @@ function tremer(elemento, animacao){
 
 function avancarMissao(){
     let concluir;
+    let som = new Audio('../../Sons/concluido.mp3');
+    som.play();
     if(getComputedStyle(missao1).display == 'block'){
         pararRelogio();
         let tempoTotal = (minutos * 60) + segundos;
@@ -376,13 +388,18 @@ function concluirMissao(){
         resetarRelogio();
     }
     else{
+        let som;
         missao3.style.display = 'none';
         if(jogador.obsidians > 8){
             document.getElementById('finalBom').style.display = 'block';
+            som = new Audio('../../Sons/finalBom.mp3');
+            som.play();
         }else if(jogador.obsidians > 3){
             document.getElementById('finalMedio').style.display = 'block';
         }else{
             document.getElementById('finalRuim').style.display = 'block';
+            som = new Audio('../../Sons/derrota.mp3');
+            som.play();
         }
         document.getElementById('seta_direita').style.display = 'none';
         document.getElementById('seta_esquerda').style.display = 'none';
@@ -485,9 +502,6 @@ function cenaEsquerda(){
     }
 }
 
-
-//Música:
-
 //Piano:
 
 function tocarPiano(nota){
@@ -495,5 +509,6 @@ function tocarPiano(nota){
 
     tocar.play();
 }
+
 
 iniciarRelogio();
