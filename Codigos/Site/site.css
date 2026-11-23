@@ -69,14 +69,6 @@ body {
 
     padding: 60px 8%;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4, 5, 20, 0.95),
-            rgba(4, 5, 20, 0.45)
-        ),
-        url("imagens/laboratorio.png");
-
     background-size: cover;
     background-position: center;
 }
