@@ -34,6 +34,21 @@ main{
     gap: 10px;
 }
 
+
+a{
+    margin-top: 10px;
+    height: auto;
+    width: 25%;
+}
+a:hover{
+    box-shadow: inset 0 0 0 1000px rgba(56, 56, 56, 0.45);
+}
+
+.title{
+    height: auto;
+    width: 50%;
+}
+
 @media (orientation:portrait ){
     main{
         grid-area: "main";
@@ -43,15 +58,4 @@ main{
         flex-direction: column;
         gap: 10px;
     }
-}
-
-a{
-    margin-top: 10px;
-    height: auto;
-    width: 25%;
-}
-
-.title{
-    height: auto;
-    width: 50%;
 }
