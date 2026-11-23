@@ -109,20 +109,28 @@
                 </div>
             </div>
         </div>
+
         <div id="missao3" class="missoes">
             <div id="cena1_missao3" class="cena">
                 <div id="laser" class="laser"></div>
                 <div id="pedestal" class="pedestal"></div>
-                <div id="AbyssalObsidian"></div>
+                <div id="AbyssalObsidian" onclick="avancarMissao()"></div>
+                <div id="conclusaoMissao3" class="conclusaoMissao">
+                    <div id="obsidian1Missao3" class="obsidian1 obsidian"></div>
+                    <div id="obsidian2Missao3" class="obsidian2 obsidian"></div>
+                    <div id="obsidian3Missao3" class="obsidian3 obsidian"></div>
+                    <p id="mostrarTempoFinalMissao3" class="mostrarTempoFinal">Tempo: <span id="tempoFinalMissao3">--:--</span></p>
+                    <button id="avancar3" class="avancar" onclick="concluirMissao()" type="button">Terminar</button>
+                </div>
             </div>
             <div id="cena2_missao3" class="cena">
                 <div id="botaoTrancado" class="botao" onclick="quebrar()"></div>
-                <div id="botaoLiberado" class="botao"></div>
+                <div id="botaoLiberado" class="botao" onclick="liberarLasers()"></div>
             </div>
             <div id="cena3_missao3" class="cena">
                 <div id="armaduraInteira" class="armadura"></div>
                 <div id="armaduraQuebrada" class="armadura"></div>
-                <div id="marreta"></div>
+                <div id="marreta" onclick="pegarMarreta()"></div>
             </div>
         </div>
     </main>

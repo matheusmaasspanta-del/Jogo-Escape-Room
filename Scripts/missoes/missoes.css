@@ -737,7 +737,7 @@ body{
     height: 58px;
 
     right: 20%;
-    bottom: 4px;
+    bottom: -5%;
 
     background-image: url(../../Sprites/EstatuaQuebrada.png);
     background-size: 100% 100%;
@@ -746,6 +746,23 @@ body{
     transform: rotate(90deg);
 
     z-index: 2;
+}
+
+#marreta{
+    position: absolute;
+
+    width: 85px;
+    height: 34px;
+
+    right: 25%;
+    bottom: 4px;
+
+    background-image: url(../../Sprites/Marreta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+    z-index: 3;
 }
 /* FIM */
 

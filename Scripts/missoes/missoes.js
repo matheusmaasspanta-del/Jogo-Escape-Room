@@ -155,9 +155,15 @@ function mostrarTeclas(){
 
 // missão 3
 
+function pegarMarreta(){
+    let marreta = document.getElementById('marreta');
+    jogador.marreta = true;
+    marreta.style.display = 'none';
+}
+
 function quebrar(){
     let botaoTrancado = document.getElementById('botaoTrancado');
-    let botaoLiberto = document.getElementById('botaoLiberto');
+    let botaoLiberto = document.getElementById('botaoLiberado');
 
     if(jogador.marreta == false){
         tremer(botaoTrancado, 'animacaoBotao');
@@ -166,6 +172,13 @@ function quebrar(){
         botaoTrancado.style.display = 'none';
     }
 }
+
+function liberarLasers(){
+    let laser = document.getElementById('laser');
+    laser.style.display = 'none';
+}
+
+
 
 // geral
 
@@ -235,9 +248,32 @@ function avancarMissao(){
         }
     }
     else{
-        jogador.concluirMissao3 = true;
+        pararRelogio();
         let tempoTotal = (minutos * 60) + segundos;
 
+        concluir = document.getElementById('conclusaoMissao3');
+        concluir.style.display = 'block';
+        jogador.concluirMissao3 = true;
+        document.getElementById('tempoFinalMissao3').innerHTML = `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+
+        let obsidian1 = document.getElementById('obsidian1Missao3');
+        let obsidian2 = document.getElementById('obsidian2Missao3');
+        let obsidian3 = document.getElementById('obsidian3Missao3');
+
+        obsidian1.style.display = 'block';
+        obsidian2.style.display = 'block';
+        obsidian3.style.display = 'block';
+        
+        if(tempoTotal >= 25 && tempoTotal <= 50){
+            obsidian3.style.display = 'none';
+            jogador.obsidians += 2;
+        }else if(tempoTotal > 50){
+            obsidian2.style.display = 'none';
+            obsidian3.style.display = 'none';
+            jogador.obsidians += 1;
+        }else{
+            jogador.obsidians += 3;
+        }
     }
 }
 
