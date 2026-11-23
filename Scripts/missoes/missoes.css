@@ -377,6 +377,94 @@ body{
     box-shadow: inset 0 0 0 1000px rgba(56, 56, 56, 0.45);
 }
 
+#diario{
+    display: none;
+    width: 170px;
+    height: 110px;
+
+    background-image: url(../../Sprites/diarioAberto.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 20;
+}
+.item{
+    position: absolute;
+    z-index: 21;
+    display: none;
+}
+#codigoDiario{
+    width: 32px;
+    height: 15px;
+
+    background-image: url(../../Sprites/PapelSenha.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    left: 20%;
+    top: 15px;
+    transform: translate(-20%) scale(1.5);
+}
+#chaveDiario{
+    width: 54px;
+    height: 21px;
+
+    background-image: url(../../Sprites/Chave.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    left: 10%;
+    top: 35%;
+}
+#musica{
+    width: 9px;
+    height: 14px;
+
+    background-image: url(../../Sprites/nota.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    right: 20%;
+    top: 25%;
+
+    transform: scale(3) translate(-20%);
+}
+#marretaDiario{
+    position: absolute;
+
+    width: 85px;
+    height: 34px;
+
+    left: 1%;
+    bottom: 8px;
+
+    background-image: url(../../Sprites/Marreta.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transform: scale(0.8);
+}
+#botaoDiario{
+    position: absolute;
+
+    height: 64px;
+    width: 64px;
+
+    right: 8%;
+    bottom: 0px;
+
+    transform: scale(0.5);
+
+    background-image: url(../../Sprites/BotaoTrancado.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 /* Missão 2 */
 
 #cena1_missao2{

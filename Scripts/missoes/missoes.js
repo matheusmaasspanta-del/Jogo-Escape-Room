@@ -44,6 +44,8 @@ function mostrarPapelCodigo(){
         papel.style.display = 'flex';
         jogador.papelComCodigoMissao1 = true;
     }
+
+    document.getElementById('codigoDiario').style.display = 'block';
 }
 
 function esconderPapel(){
@@ -100,6 +102,8 @@ function pegarChave(){
     jogador.chave = true;
     jogador.inventario.push('Chave');
     inventario();
+
+    document.getElementById('chaveDiario').style.display = 'block';
 }
 
 // missão 2
@@ -160,6 +164,8 @@ function mostrarTeclas(){
     }
 
     document.getElementById('teclas').style.display = 'block';
+
+    document.getElementById('musica').style.display = 'block';
 }
 
 // missão 3
@@ -170,6 +176,7 @@ function pegarMarreta(){
     marreta.style.display = 'none';
     jogador.inventario.push('Marreta');
     inventario();
+    document.getElementById('marretaDiario').style.display = 'block';
 }
 
 function quebrar(){
@@ -181,6 +188,7 @@ function quebrar(){
     }else{
         botaoLiberto.style.display = 'block';
         botaoTrancado.style.display = 'none';
+        document.getElementById('botaoDiario').style.display = 'block';
     }
 }
 
@@ -192,6 +200,15 @@ function liberarLasers(){
 
 
 // geral
+
+function mostrarDiario(){
+    let diario = document.getElementById('diario');
+    if(getComputedStyle(diario).display == 'none'){
+        diario.style.display = 'block';
+    }else{
+        diario.style.display = 'none';
+    }
+}
 
 function inventario(){
     let slot = document.querySelectorAll('.slot');
