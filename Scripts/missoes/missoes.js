@@ -11,7 +11,7 @@ let jogador = {
     teclas: null,
     codigoMissao2: null,
 
-    marreta: false;
+    marreta: false,
 
     obsidians: 0,
 }

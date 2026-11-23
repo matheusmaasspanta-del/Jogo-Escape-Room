@@ -715,6 +715,38 @@ body{
     z-index: 1;
 }
 
+#armaduraInteira{
+    position: absolute;
+
+    width: 36px;
+    height: 115px;
+
+    left: 20%;
+    bottom: 4px;
+
+    background-image: url(../../Sprites/EstatuaInteira.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+#armaduraQuebrada{
+    position: absolute;
+
+    width: 36px;
+    height: 58px;
+
+    right: 20%;
+    bottom: 4px;
+
+    background-image: url(../../Sprites/EstatuaQuebrada.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transform: rotate(90deg);
+
+    z-index: 2;
+}
 /* FIM */
 
 /* Tela de Conclusão */
