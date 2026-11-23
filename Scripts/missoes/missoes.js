@@ -321,7 +321,14 @@ function concluirMissao(){
         resetarRelogio();
     }
     else{
-        
+        missao3.style.display = 'none';
+        if(jogador.obsidians > 8){
+            document.getElementById('finalBom').style.display = 'block';
+        }else if(jogador.obsidians > 3){
+            document.getElementById('finalMedio').style.display = 'block';
+        }else{
+            document.getElementById('finalRuim').style.display = 'block';
+        }
     }
 }
 
