@@ -329,7 +329,18 @@ function concluirMissao(){
         }else{
             document.getElementById('finalRuim').style.display = 'block';
         }
+        document.getElementById('seta_direita').style.display = 'none';
+        document.getElementById('seta_esquerda').style.display = 'none';
+        document.getElementById('relogio').style.display = 'none';
     }
+}
+
+function finalizar(){
+    document.getElementById('fim').style.display = 'block';
+
+    document.getElementById('finalBom').style.display = 'none';
+    document.getElementById('finalMedio').style.display = 'none';
+    document.getElementById('finalRuim').style.display = 'none';
 }
 
 // Trocar cenas

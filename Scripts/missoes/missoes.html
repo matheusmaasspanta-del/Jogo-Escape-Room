@@ -134,19 +134,25 @@
             </div>
         </div>
         <div id="finalBom" class="final">
-            <div id="terminarJogoBom" class="finalizar">Finalizar jogo</div>
+            <p>Você conseguiu, o mundo foi salvo e agora você finalmente pode descansar.</p>
+            <div id="terminarJogoBom" class="finalizar" onclick="finalizar()">Finalizar jogo</div>
         </div>
         <div id="finalMedio" class="final">
-            <div id="terminarJogoMedio" class="finalizar">Finalizar jogo</div>
+            <p id="morte">Você chegou tarde, o poder liberado pela obsidiana te matou.</p>
+            <p id="salvar">Mas você conseguiu salvar o mundo.</p>
+            <div id="terminarJogoMedio" class="finalizar" onclick="finalizar()">Finalizar jogo</div>
         </div>
         <div id="finalRuim" class="final">
-            <div id="terminarJogoRuim" class="finalizar">Finalizar jogo</div>
+            <p>Você demorou demais, infelizmente a obsidiana liberou poder máximo e destruiu o mundo.</p>
+            <div id="terminarJogoRuim" class="finalizar" onclick="finalizar()">Finalizar jogo</div>
         </div>
 
         <div id="fim" class="final">
-            <img src="../../Sprites/menu/Logo.png" height="100%" width="100%" alt="Logo" id="title" class="title">
+            <div id="titulo"></div>
+            <a href="../menu/menu.html">
+                <div id="menu" class="finalizar">Menu</div>
+            </a>
             <p id="creditos">Feito por: Matheus Maass Panta.</p>
-            <div id="site"></div>
         </div>
     </main>
 

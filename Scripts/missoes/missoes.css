@@ -24,8 +24,7 @@ body{
 
 .cena{
     height: 100%;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .tempo{
@@ -603,15 +602,22 @@ body{
 }
 
 #quadroNotas{
-    width: 46px;
-    height: 20px;
+    width: 55px;
+    height: 25px;
     background-color: #e4c997 ;
     border: black 1px solid;
     
-    font-size: 5px;
+    font-size: 4px;
+    font-family: 'Press Start 2P';
     
     left: 40%;
     bottom: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
 }
 
 /* Missão 3 */
@@ -780,18 +786,123 @@ body{
 
 .final{
     display: none;
+    height: 100%;
+    width: 100%;
 }
 
 #finalBom{
+    background-image: url(../../Sprites/finalBom.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
     
+    z-index: 1;
+}
+#finalBom p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 250px;
+    color: #fafafa;
+    z-index: 3;
 }
 
 #finalMedio{
+    background-image: url(../../Sprites/finalMedio.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+#finalMedio p{
+    position: absolute;
+    width: 250px;
+    color: #fafafa;
+    z-index: 3;
+}
+#morte{
+    bottom: 4px;
+    left: -50px;
 
+    transform: scale(0.5);
+}
+#salvar{
+    top: 4px;
+    right: -50px;
+
+    transform: scale(0.5);
 }
 
 #finalRuim{
+    background-image: url(../../Sprites/finalRuim.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+#finalRuim p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%) scale(0.5);
+    width: 250px;
+    color: #fafafa;
+    z-index: 3;
+}
 
+.finalizar{
+    height: 54px;
+    width: 129px;
+
+    background-image: url(../../Sprites/Botao.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
+    z-index: 2;
+}
+
+#fim a{
+    color: inherit;
+    text-decoration: none;
+}
+#menu{
+    display: flex;
+    font-size: 30px;
+    height: 54px;
+    width: 129px;
+    background-image: url(../../Sprites/Botao.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    transform: scale(0.5);
+    right: -20px;
+    bottom: -4px;
+}
+#creditos{
+    color: #fafafa;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+#titulo{
+    height: 128px;
+    width: 300px;
+    background-image: url(../../Sprites/menu/Logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
 }
 
 /* Tela de Conclusão */
