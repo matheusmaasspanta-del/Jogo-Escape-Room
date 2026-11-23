@@ -228,7 +228,7 @@ function inventario(){
     }
 
     for(let i = 0; i < jogador.inventario.length && i < slot.length; i++){
-        slot[i].innerHTML = `<img src="../../Sprites/${jogador.inventario[i]}.png">`;
+        slot[i].innerHTML = `<img src="../../Imagens/${jogador.inventario[i]}.png">`;
 
         if(jogador.inventario[i] == 'PapelSenha'){
             slot[i].onclick = mostrarCodigo;

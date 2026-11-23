@@ -57,7 +57,7 @@ body{
 #cena1_missao1{
     display: block;
 
-    background-image: url(../../Sprites/Background1.png);
+    background-image: url(../../Imagens/Background1.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
 
@@ -65,7 +65,7 @@ body{
 }
 
 #cena2_missao1{
-    background-image: url(../../Sprites/Background2.png);
+    background-image: url(../../Imagens/Background2.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
 
@@ -73,7 +73,7 @@ body{
 }
 
 #cena3_missao1{
-    background-image: url(../../Sprites/Background3.png);
+    background-image: url(../../Imagens/Background3.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
 
@@ -100,7 +100,7 @@ body{
 }
 
 #porta1{
-    background-image: url(../../Sprites/Porta_fechada.png);
+    background-image: url(../../Imagens/Porta_fechada.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -108,7 +108,7 @@ body{
 #porta1Aberta{
     display: none;
 
-    background-image: url(../../Sprites/Porta_aberta.png);
+    background-image: url(../../Imagens/Porta_aberta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -125,7 +125,7 @@ body{
 
     transform: translate(-50%, -50%) scale(6);
 
-    background-image: url(../../Sprites/PapelSenha.png);
+    background-image: url(../../Imagens/PapelSenha.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -152,7 +152,7 @@ body{
     right: 20%;
     top: 31%;
 
-    background-image: url(../../Sprites/Planta.png);
+    background-image: url(../../Imagens/Planta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -167,7 +167,7 @@ body{
     left: 20%;
     top: 31%;
 
-    background-image: url(../../Sprites/Planta.png);
+    background-image: url(../../Imagens/Planta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -185,7 +185,7 @@ body{
 
     width: 130px;
     height: 65px;
-    background-image: url(../../Sprites/bauFechado.png);
+    background-image: url(../../Imagens/bauFechado.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -210,7 +210,7 @@ body{
     position: absolute;
     width: 130px;
     height: 75px;
-    background-image: url(../../Sprites/bauAberto.png);
+    background-image: url(../../Imagens/bauAberto.png);
     left: 50%;
     top: 78%;
     transform: translate(-50%, -50%);
@@ -234,7 +234,7 @@ body{
     width: 14px;
     height: 20px;
 
-    background-image: url(../../Sprites/fechadura_digital.png);
+    background-image: url(../../Imagens/fechadura_digital.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -308,7 +308,7 @@ body{
     width: 108px;
     height: 42px;
 
-    background-image: url(../../Sprites/Chave.png);
+    background-image: url(../../Imagens/Chave.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -341,7 +341,7 @@ body{
 }
 
 #seta_esquerda{
-    background-image: url(../../Sprites/Cena_esquerda.png);
+    background-image: url(../../Imagens/Cena_esquerda.png);
     left: 10px;
     top: 50%;
     
@@ -349,7 +349,7 @@ body{
 }
 
 #seta_direita{
-    background-image: url(../../Sprites/Cena_direita.png);
+    background-image: url(../../Imagens/Cena_direita.png);
     right: 10px;
     top:50%;
     
@@ -367,7 +367,7 @@ body{
     
     cursor: pointer;
 
-    background-image: url(../../Sprites/Diario.png);
+    background-image: url(../../Imagens/Diario.png);
     right: 10px;
     top: 10px;
     
@@ -382,7 +382,7 @@ body{
     width: 170px;
     height: 110px;
 
-    background-image: url(../../Sprites/diarioAberto.png);
+    background-image: url(../../Imagens/diarioAberto.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -402,7 +402,7 @@ body{
     width: 32px;
     height: 15px;
 
-    background-image: url(../../Sprites/PapelSenha.png);
+    background-image: url(../../Imagens/PapelSenha.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -414,7 +414,7 @@ body{
     width: 54px;
     height: 21px;
 
-    background-image: url(../../Sprites/Chave.png);
+    background-image: url(../../Imagens/Chave.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -425,7 +425,7 @@ body{
     width: 9px;
     height: 14px;
 
-    background-image: url(../../Sprites/nota.png);
+    background-image: url(../../Imagens/nota.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -443,7 +443,7 @@ body{
     left: 1%;
     bottom: 8px;
 
-    background-image: url(../../Sprites/Marreta.png);
+    background-image: url(../../Imagens/Marreta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -460,7 +460,7 @@ body{
 
     transform: scale(0.5);
 
-    background-image: url(../../Sprites/BotaoTrancado.png);
+    background-image: url(../../Imagens/BotaoTrancado.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -468,7 +468,7 @@ body{
 /* Missão 2 */
 
 #cena1_missao2{
-    background-image: url(../../Sprites/background1Missao2.png);
+    background-image: url(../../Imagens/background1Missao2.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -486,7 +486,7 @@ body{
     
     transform: translate(-50%, -50%);
     
-    background-image: url(../../Sprites/porta.png);
+    background-image: url(../../Imagens/porta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -496,7 +496,7 @@ body{
 #porta2Aberta{
     display: none;
     
-    background-image: url(../../Sprites/Porta_aberta.png);
+    background-image: url(../../Imagens/Porta_aberta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -507,7 +507,7 @@ body{
     width: 14px;
     height: 20px;
     
-    background-image: url(../../Sprites/fechadura_digital.png);
+    background-image: url(../../Imagens/fechadura_digital.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -529,7 +529,7 @@ body{
     width: 14px;
     height: 20px;
     
-    background-image: url(../../Sprites/fechadura_digital.png);
+    background-image: url(../../Imagens/fechadura_digital.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -595,7 +595,7 @@ body{
 }
 
 #cena2_missao2{
-    background-image: url(../../Sprites/background2Missao2.png);
+    background-image: url(../../Imagens/background2Missao2.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -615,7 +615,7 @@ body{
     
     transform: translate(-50%);
     
-    background-image: url(../../Sprites/Piano.png);
+    background-image: url(../../Imagens/Piano.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -638,17 +638,17 @@ body{
     z-index: 3;
 }
 #teclasC7M{
-    background-image: url(../../Sprites/TeclasC7M.png);
+    background-image: url(../../Imagens/TeclasC7M.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #teclasDm7{
-    background-image: url(../../Sprites/TeclasDm7.png);
+    background-image: url(../../Imagens/TeclasDm7.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #teclasG7{
-    background-image: url(../../Sprites/TeclasG7.png);
+    background-image: url(../../Imagens/TeclasG7.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -699,7 +699,7 @@ body{
 }
 
 #cena3_missao2{
-    background-image: url(../../Sprites/background3Missao2.png);
+    background-image: url(../../Imagens/background3Missao2.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -713,7 +713,7 @@ body{
     z-index: 2;
 }
 #quadro1{
-    background-image: url(../../Sprites/quadro1.png);
+    background-image: url(../../Imagens/quadro1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -721,7 +721,7 @@ body{
     top: 15%;
 }
 #quadro2{
-    background-image: url(../../Sprites/quadro2.png);
+    background-image: url(../../Imagens/quadro2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -729,7 +729,7 @@ body{
     top: 30%;
 }
 #quadro3{
-    background-image: url(../../Sprites/quadro3.png);
+    background-image: url(../../Imagens/quadro3.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -759,7 +759,7 @@ body{
 /* Missão 3 */
 
     #cena1_missao3{
-    background-image: url(../../Sprites/background1Missao3.png);
+    background-image: url(../../Imagens/background1Missao3.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -777,7 +777,7 @@ body{
     
     transform: translate(-50%);
     
-    background-image: url(../../Sprites/Pedestal.png);
+    background-image: url(../../Imagens/Pedestal.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -795,7 +795,7 @@ body{
 
     transform: translate(-50%);
     
-    background-image: url(../../Sprites/Laser.png);
+    background-image: url(../../Imagens/Laser.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -813,7 +813,7 @@ body{
 
     transform: translate(-50%) scale(2);
 
-    background-image: url(../../Sprites/Obsidiana_Abissal.png);
+    background-image: url(../../Imagens/Obsidiana_Abissal.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -826,7 +826,7 @@ body{
 }
 
 #cena2_missao3{
-    background-image: url(../../Sprites/background2Missao3.png);
+    background-image: url(../../Imagens/background2Missao3.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -850,12 +850,12 @@ body{
 }
 
 #botaoTrancado{
-    background-image: url(../../Sprites/BotaoTrancado.png);
+    background-image: url(../../Imagens/BotaoTrancado.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #botaoLiberado{
-    background-image: url(../../Sprites/BotaoLiberto.png);
+    background-image: url(../../Imagens/BotaoLiberto.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -866,7 +866,7 @@ body{
 }
 
 #cena3_missao3{
-    background-image: url(../../Sprites/background3Missao3.png);
+    background-image: url(../../Imagens/background3Missao3.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -882,7 +882,7 @@ body{
     left: 20%;
     bottom: 4px;
 
-    background-image: url(../../Sprites/EstatuaInteira.png);
+    background-image: url(../../Imagens/EstatuaInteira.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -897,7 +897,7 @@ body{
     right: 20%;
     bottom: -5%;
 
-    background-image: url(../../Sprites/EstatuaQuebrada.png);
+    background-image: url(../../Imagens/EstatuaQuebrada.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -917,7 +917,7 @@ body{
 
     cursor: pointer;
 
-    background-image: url(../../Sprites/Marreta.png);
+    background-image: url(../../Imagens/Marreta.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -937,7 +937,7 @@ body{
 }
 
 #finalBom{
-    background-image: url(../../Sprites/finalBom.png);
+    background-image: url(../../Imagens/finalBom.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -954,7 +954,7 @@ body{
 }
 
 #finalMedio{
-    background-image: url(../../Sprites/finalMedio.png);
+    background-image: url(../../Imagens/finalMedio.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -980,7 +980,7 @@ body{
 }
 
 #finalRuim{
-    background-image: url(../../Sprites/finalRuim.png);
+    background-image: url(../../Imagens/finalRuim.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
     
@@ -1000,7 +1000,7 @@ body{
     height: 54px;
     width: 129px;
 
-    background-image: url(../../Sprites/Botao.png);
+    background-image: url(../../Imagens/Botao.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -1028,7 +1028,7 @@ body{
     font-size: 30px;
     height: 54px;
     width: 129px;
-    background-image: url(../../Sprites/Botao.png);
+    background-image: url(../../Imagens/Botao.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     justify-content: center;
@@ -1046,7 +1046,7 @@ body{
 #titulo{
     height: 128px;
     width: 300px;
-    background-image: url(../../Sprites/menu/Logo.png);
+    background-image: url(../../Imagens/menu/Logo.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -1064,7 +1064,7 @@ body{
     
     position: absolute;
     
-    background-image: url(../../Sprites/ConclusaoMissao.png);
+    background-image: url(../../Imagens/ConclusaoMissao.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -1084,7 +1084,7 @@ body{
     
     position: absolute;
     
-    background-image: url(../../Sprites/Obsidiana_Abissal.png);
+    background-image: url(../../Imagens/Obsidiana_Abissal.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -1235,7 +1235,7 @@ body{
         transform: scale(1);
     }
     #cena1_missao1{
-        background-image: url(../../Sprites/Background1.png);
+        background-image: url(../../Imagens/Background1.png);
         background-size:100% 100%;
         background-repeat: no-repeat;
 
