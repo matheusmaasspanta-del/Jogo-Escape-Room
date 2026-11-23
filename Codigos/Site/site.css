@@ -72,6 +72,18 @@ body {
     background-size: cover;
     background-position: center;
 }
+#suporte{
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 8%;
+
+    background-size: cover;
+    background-position: center;
+}
 
 .conteudo {
     max-width: 550px;
@@ -141,10 +153,36 @@ body {
 }
 
 #dev{
+    height: 400px;
     background-color: #090817;
     padding: 10px;
     border: 2px solid #a64cff;
     border-radius: 20px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: #080817;
+    border: #a64cff solid 1px;
+    border-radius: 8px;
+    height: 25px;
+    color: #fafafa
+}
+#caixa{
+    height: 200px;
+}
+#Enviar{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    background-color: #080817;
+    border: #a64cff solid 1px;
+    border-radius: 8px;
+    color: #fafafa;
+    font-family: 'Silkscreen';
 }
 
 @media (max-width: 768px) {
