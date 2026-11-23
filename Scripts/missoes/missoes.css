@@ -389,6 +389,8 @@ body{
     bottom: 15%;
     
     transform: translate(-50%);
+
+    cursor: pointer;
     
     z-index: 3;
 }
@@ -476,6 +478,8 @@ body{
     
     left: 50%;
     bottom: 4px;
+
+    cursor: pointer;
     
     transform: translate(-50%);
     
@@ -521,6 +525,8 @@ body{
     
     height: 14px;
     width: 5px;
+
+    cursor: pointer;
     
     top: 1px;
     
@@ -644,7 +650,7 @@ body{
     
     left: 50%;
     bottom: 4px;
-    
+
     transform: translate(-50%);
     
     background-image: url(../../Sprites/Laser.png);
@@ -669,6 +675,8 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
+    cursor: pointer;
+
     z-index: 2;
 }
 
@@ -689,6 +697,8 @@ body{
     left: 50%;
     top: 50%;
 
+    cursor: pointer;
+
     transform: translate(-50%, -50%);
 
     z-index: 2;
@@ -699,7 +709,7 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-#botaoLiberto{
+#botaoLiberado{
     background-image: url(../../Sprites/BotaoLiberto.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -756,6 +766,8 @@ body{
 
     right: 25%;
     bottom: 4px;
+
+    cursor: pointer;
 
     background-image: url(../../Sprites/Marreta.png);
     background-size: 100% 100%;
