@@ -3,6 +3,8 @@ let jogador = {
     concluirMissao2: false,
     concluirMissao3: false,
     
+    inventario: [],
+
     chave: false,
     papelComCodigoMissao1: false, 
     codigoMissao1: null,
@@ -47,6 +49,11 @@ function mostrarPapelCodigo(){
 function esconderPapel(){
     let papel = document.getElementById('codigo1');
     papel.style.display = 'none';
+
+    if(!jogador.inventario.includes('PapelSenha')){
+        jogador.inventario.push('PapelSenha');
+        inventario();
+    }
 }
 
 function abrirPortaMissao1(){
@@ -91,6 +98,8 @@ function pegarChave(){
     let chave = document.getElementById('chave');
     chave.style.display = 'none';
     jogador.chave = true;
+    jogador.inventario.push('Chave');
+    inventario();
 }
 
 // missão 2
@@ -159,6 +168,8 @@ function pegarMarreta(){
     let marreta = document.getElementById('marreta');
     jogador.marreta = true;
     marreta.style.display = 'none';
+    jogador.inventario.push('Marreta');
+    inventario();
 }
 
 function quebrar(){
@@ -181,6 +192,33 @@ function liberarLasers(){
 
 
 // geral
+
+function inventario(){
+    let slot = document.querySelectorAll('.slot');
+
+    for(i = 0; i < slot.length; i++){
+        slot[i].innerHTML = '';
+    }
+
+    for(let i = 0; i < jogador.inventario.length && i < slot.length; i++){
+        slot[i].innerHTML = `<img src="../../Sprites/${jogador.inventario[i]}.png">`;
+
+        if(jogador.inventario[i] == 'PapelSenha'){
+            slot[i].onclick = mostrarCodigo;
+        }
+    }
+}
+
+function mostrarCodigo(){
+    let papel = document.getElementById('codigo1');
+    papel.innerHTML = `
+        <p class="codigoTexto">
+            <strong>${jogador.codigoMissao1}</strong>
+        </p>
+    `;
+    papel.style.display = 'flex';
+    papel.onclick = esconderPapel;
+}
 
 function tremer(elemento, animacao){
     elemento.style.animation = 'none';
@@ -332,6 +370,7 @@ function concluirMissao(){
         document.getElementById('seta_direita').style.display = 'none';
         document.getElementById('seta_esquerda').style.display = 'none';
         document.getElementById('relogio').style.display = 'none';
+        document.getElementById('inventario').style.display = 'none';
     }
 }
 
